@@ -1,18 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import bg from './img/bg.png'
 
 function App() {
 
   return (
       <>
-        <Navbar bg="success" variant="dark" className= "position-fixed top-0 start-0 w-100 pb-5" collapseOnSelect expand="lg">
+        <Navbar bg="black" variant="dark" className= "start-0 w-100" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -41,6 +39,16 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <div className='main-bg'  style={{
+        backgroundImage: `url(${bg})`,
+        height: '400px',
+        width: '100%',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}>
+      </div>
+
     </>
   )
 }
