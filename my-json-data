@@ -2,19 +2,19 @@
   {
     "id": "001",
     "name" : "Door bell" ,
-    "category": "craft",
+    "category": "Handmade crafts",
     "cost": 20.99
   },
   {
     "id": "002",
     "name" : "Table clock" ,
-    "category": "craft",
+    "category": "Handmade crafts",
     "cost": 15.99
   },
   {
     "id": "003",
     "name" : "Table mirror" ,
-    "category": "craft",
+    "category": "Handmade crafts",
     "cost": 20.99
   }
 ]
