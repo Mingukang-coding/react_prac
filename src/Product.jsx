@@ -1,12 +1,28 @@
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 function Product() {
+
+  let [products, setProducts] = useState([]);
+
+    useEffect(() => {
+      axios.get('https://mingukang-coding.github.io/react_prac/my-json-data')
+        .then((res) => {
+          setProducts(res.data);
+        })
+        .catch(() => {
+          console.log('Error : fail to load data..');
+        });
+    }, []);
+    
     return (
-      
+
       <Row xs={1} md={2} className="g-4" style={{ paddingTop: '24px' }}>
-        {Array.from({ length: 3 }).map((_, idx) => (
+        
+        { products.map((_, idx) => (
           <Col key={idx} >
             <Card>
                 <Card.Img variant="top" src="holder.js/100px160" />
