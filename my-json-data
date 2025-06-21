@@ -1,0 +1,17 @@
+[
+  {
+    "id": "001",
+    "category": "craft",
+    "cost": 20.99
+  },
+  {
+    "id": "002",
+    "category": "craft",
+    "cost": 15.99
+  },
+  {
+    "id": "003",
+    "category": "flowerBouquet",
+    "cost": 20.99
+  }
+]
