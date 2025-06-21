@@ -6,6 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import bg from './img/bg.png'
 import Product from './Product';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
 
@@ -41,15 +42,30 @@ function App() {
         </Container>
       </Navbar>
 
-      <div className='main-bg'  style={{
-        backgroundImage: `url(${bg})`,
-        height: '400px',
-        width: '100%',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}>
-      </div>
-      <Product/>
+      <Routes>
+        <Route path='/' element={
+          <>
+          <div className='main-bg'  style={{
+            backgroundImage: `url(${bg})`,
+            height: '400px',
+            width: '100%',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}>
+          </div>
+          <Product/>
+          </>
+        }
+        />
+
+        <Route path='/detail' element={
+          <div>
+            <h1>Detail page</h1>
+          </div>
+        }/>
+
+      </Routes>
+
     </>
   )
 }
