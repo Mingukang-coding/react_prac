@@ -6,19 +6,20 @@ function Product() {
     return (
       
       <Row xs={1} md={2} className="g-4" style={{ paddingTop: '24px' }}>
-        {Array.from({ length: 4 }).map((_, idx) => (
-          <Col key={idx}>
+        {Array.from({ length: 3 }).map((_, idx) => (
+          <Col key={idx} >
             <Card>
-              <Card.Img variant="top" src="holder.js/100px160" />
-              <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a longer card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                  <button className='btn btn-danger' style={{display : 'centre'}}>Order now</button>
+                </Card.Body>
+              </Card>
           </Col>
         ))}
       </Row>
