@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import bg from './img/bg.png'
+import Card from './Product';
+import Product from './Product';
 
 function App() {
 
@@ -48,7 +50,7 @@ function App() {
         backgroundPosition: 'center',
       }}>
       </div>
-
+      <Product/>
     </>
   )
 }
