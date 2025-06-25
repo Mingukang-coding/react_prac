@@ -16,5 +16,11 @@
     "name" : "Table mirror" ,
     "category": "Handmade crafts",
     "cost": 20.99
-  }
+  },
+  {
+      "id": "004",
+      "name" : "door chime" ,
+      "category": "Handmade crafts",
+      "cost": 7.99
+    }
 ]
