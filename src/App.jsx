@@ -59,9 +59,7 @@ function App() {
         />
 
         <Route path='/detail' element={
-          <div>
-            <h1>Detail page</h1>
-          </div>
+        <div>Detail page...</div>
         }/>
 
       </Routes>
