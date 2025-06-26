@@ -35,7 +35,7 @@ function Product() {
             <Card onClick={()=>{
             }}>
                 <Card.Img variant="top"   
-                  style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
                   src={`${baseImgUrl}${a.id}.jpg`}/>
                 <Card.Body>
                   <Card.Title>{a.name}</Card.Title>
