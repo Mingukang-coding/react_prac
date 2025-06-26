@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 function Product() {
+  const [baseImgUrl, setbaseImgUrl] = useState('https://mingukang-coding.github.io/react_prac/product_img/');
 
   let [products, setProducts] = useState([]);
 
@@ -20,17 +21,21 @@ function Product() {
     
     return (
 
-      <Row xs={1} md={2} className="g-4" style={{ paddingTop: '24px' }}>
+      <Row xs={1} md={4} className="g-4" style={{ margin: 'auto 5px'}}>
         
         { products.map(( a, idx) => (
           <Col key={idx} >
-            <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+            <Card onClick={()=>{
+
+            }}>
+                <Card.Img variant="top"   
+                  style={{ width: '300px', height: '300px', objectFit: 'cover' }} 
+                  src={`${baseImgUrl}${a.id}.jpg`}/>
                 <Card.Body>
                   <Card.Title>{a.name}</Card.Title>
                   <Card.Text>product category : {a.category}</Card.Text>
                   <Card.Text>{a.cost}</Card.Text>
-                  <button className='btn btn-danger' style={{display : 'centre'}}>Order now</button>
+                  <button className='btn btn-danger' style={{display : 'centre'}}>Add to cart</button>
                 </Card.Body>
               </Card>
           </Col>
